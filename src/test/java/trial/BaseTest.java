@@ -51,6 +51,7 @@ public class BaseTest {
 		
 		driver.findElement(By.id("identifierId")).sendKeys("shashimaurya813@gmail.com");
 		driver.findElement(By.xpath("//*[@id=\"identifierNext\"]/div/button/div[2]")).click();
+		driver.findElement(By.id("Password")).sendKeys("test123");
 	}
 	@AfterTest
 	public void tearDown() {
