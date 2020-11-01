@@ -20,7 +20,7 @@ public class BaseTest {
 		@BeforeSuite
 		public void setup () {
 			
-			WebDriverManager.chromedriver().setup();
+			WebDriverManager.edgedriver().setup();
 			driver = new ChromeDriver();
 			driver.get("http:\\google.com");
 			driver.manage().window().maximize();
