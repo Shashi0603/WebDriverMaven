@@ -8,6 +8,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WindowType;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
@@ -21,7 +22,7 @@ public class BaseTest {
 		public void setup () {
 			
 			WebDriverManager.edgedriver().setup();
-			driver = new ChromeDriver();
+			driver = new EdgeDriver();
 			driver.get("http:\\google.com");
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
